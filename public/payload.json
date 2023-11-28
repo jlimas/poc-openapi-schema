@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Description for the field: id"
+        }
+      },
+      "required": ["id"],
+      "description": "Description for the field: order"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string",
+          "description": "Description for the field: street"
+        }
+      },
+      "required": ["street"],
+      "description": "Description for the field: address"
+    },
+    "accounts": {
+      "type": "array",
+      "items": {
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "Description for the field: id"
+          }
+        }
+      },
+      "description": "Description for the field: accounts"
+    }
+  },
+  "required": ["order", "address", "accounts"]
+}
